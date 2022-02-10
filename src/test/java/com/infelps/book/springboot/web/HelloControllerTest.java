@@ -1,4 +1,4 @@
-package com.infelps.book.springboot;
+package com.infelps.book.springboot.web;
 import com.infelps.book.springBoot.config.auth.SecurityConfig;
 import com.infelps.book.springBoot.web.HelloController;
 import org.junit.Test;
