@@ -5,7 +5,6 @@ import com.infelps.book.springBoot.domain.posts.Posts;
 import com.infelps.book.springBoot.domain.posts.PostsRepository;
 import com.infelps.book.springBoot.web.dto.PostsSaveRequestDto;
 import com.infelps.book.springBoot.web.dto.PostsUpdateRequestDto;
-import javafx.geometry.Pos;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;

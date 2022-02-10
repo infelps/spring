@@ -1,6 +1,5 @@
 package com.infelps.book.springBoot.domain.posts;
 import com.infelps.book.springBoot.domain.BaseTimeEntity;
-import javafx.geometry.Pos;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
