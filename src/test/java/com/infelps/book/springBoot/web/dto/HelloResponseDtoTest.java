@@ -1,5 +1,4 @@
-package com.infelps.book.springboot.web.dto;
-import com.infelps.book.springBoot.web.dto.HelloResponseDto;
+package com.infelps.book.springBoot.web.dto;
 import org.junit.Test;
 import static org.assertj.core.api.Assertions.assertThat;
 

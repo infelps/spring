@@ -1,4 +1,4 @@
-package com.infelps.book.springboot.web;
+package com.infelps.book.springBoot.web;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
