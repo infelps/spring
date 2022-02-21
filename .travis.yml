@@ -13,36 +13,7 @@ cache:
 
 script: "./gradlew clean build"
 
-before_deploy:
-  - zip -r spring *
-  - mkdir -p deploy
-  - mv spring.zip deploy/spring.zip
-
-deploy:
-  - provider: s3
-    access_key_id: $AWS_ACCESS_KEY
-    secret_access_key: $AWS_SECRET_KEY
-    bucket: infelps-springboot-build
-    region: ap-northeast-2
-    skip_cleanup: true
-    acl: private
-    local_dir: deploy
-    wait-unitl-deployed: true
-
-  - provider: codedeploy
-    access_key_id: $AWS_ACCESS_KEY
-    secret_access_key: $AWS_SECRET_KEY
-
-    bucket: infelps-springboot-build
-    key: spring.zip
-
-    bundle_type: zip
-    application: freelec-springboot2-webservice
-    deployment_group: freelec-springboot2-webservice-group
-    region: ap-northeast-2
-    wait-until-deployed: true
-
 notifications:
   email:
     recipients:
-      infelps@gmail.com
+      - infelps@gmail.com
